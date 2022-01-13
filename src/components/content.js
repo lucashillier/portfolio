@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
-const Content = styled.div`
-  flex: 3;
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
+const Title = styled.h1`
+  color: #4a4a4a;
 `;
 
-export { Content };
+const Subtitle = styled.h2`
+  color: #545454;
+`;
+
+const Body = styled.p`
+  color: #616161
+`;
+
+export { Title, Subtitle, Body };

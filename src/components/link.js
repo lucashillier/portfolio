@@ -20,4 +20,8 @@ const ButtonLink = styled.a`
   }
 `;
 
-export { ButtonLink };
+const Link = styled.a`
+  color: lightblue;
+`;
+
+export { ButtonLink, Link };
