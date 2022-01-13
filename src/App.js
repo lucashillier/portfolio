@@ -1,24 +1,95 @@
-import logo from './logo.svg';
+import profilePic from './img/profile.jpg';
 import './App.css';
+import { Layout, Sidebar, Content } from "./components/layout.js";
+import { Title, Subtitle, Body } from "./components/content.js";
+import { ButtonLink, Link } from "./components/link.js";
+import { Avatar } from "./components/image.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Layout>
+        <Sidebar>
+          <Title>Lucas Hillier</Title>
+          <Avatar src={profilePic} alt="Lucas Hillier"/>
+          <Body>A brief description</Body>
+        </Sidebar>
+        <Content>
+          <Subtitle>Content Here</Subtitle>
+          <ButtonLink href="http://google.ca" target="_blank">
+            Test
+          </ButtonLink>
+          <Link href="http://google.ca">Test</Link>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+          <div>Test</div>
+        </Content>
+      </Layout>
   );
 }
 
