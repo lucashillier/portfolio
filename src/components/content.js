@@ -6,6 +6,7 @@ const Title = styled.h1`
 
 const Subtitle = styled.h2`
   color: #545454;
+  grid-column-end: span 2;
 `;
 
 const Body = styled.p`

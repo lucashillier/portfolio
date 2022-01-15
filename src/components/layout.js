@@ -22,9 +22,28 @@ const Sidebar = styled.div`
 
 const Content = styled.div`
   flex: 3;
-  display: flex;
-  flex-direction: column;
-  padding: 5px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content;
+  gap: 10px 0;
+  padding: 0 0 10px 20px;
 `;
 
-export { Layout, Sidebar, Content };
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  background-color: #e1e6f0;
+  border-radius: 10px;
+  width: 80%;
+  height: min-content;
+  padding: 5%;
+  text-align: center;
+
+  &:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.45);
+  }
+`;
+
+export { Layout, Sidebar, Content, Container };
