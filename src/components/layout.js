@@ -37,9 +37,10 @@ const Container = styled.div`
   background-color: #e1e6f0;
   border-radius: 10px;
   width: 80%;
-  height: min-content;
+  height: 0;
   padding: 5%;
   text-align: center;
+  padding-bottom: 75%;
 
   &:hover {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.45);

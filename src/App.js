@@ -1,16 +1,16 @@
 import avatar from './img/profile.jpg';
 import crawler from './img/crawler.JPG';
 import mae from './img/mae.JPG';
-import logo from './logo.svg';
-import './App.css';
+import mb3 from './img/mb3.png';
+import logo from './img/logo.svg';
 import { Layout, Sidebar, Content } from "./components/layout.js";
 import { Card } from "./components/card.js";
 import { Title, Subtitle, Body } from "./components/content.js";
 import { ButtonLink, Link } from "./components/link.js";
 import { Avatar, Image } from "./components/image.js";
 
-const bio = require('./bio.json');
-const projects = require("./projects.json");
+const bio = require('./data/bio.json');
+const projects = require("./data/projects.json");
 
 function App() {
   return (
@@ -34,6 +34,10 @@ function App() {
           <Card href={projects.portfolio.url}>
             <Image src={logo} alt="See The Code"/>
             <Body>{projects.portfolio.description}</Body>
+          </Card>
+          <Card href={projects.mb3.url}>
+            <Image src={mb3} alt="See The Code" width="75%"/>
+            <Body>{projects.mb3.description}</Body>
           </Card>
         </Content>
       </Layout>

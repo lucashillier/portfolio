@@ -13,5 +13,10 @@
   {
     "description": "A program that crawls a given domain, scrapes data, stores it in a database, indexes it, and makes it viewable on a web page.",
     "url": "https://github.com/lucashillier/web-crawler"
+  },
+  "mb3":
+  {
+    "description": "Work I completed in a work term at MB3 inc.",
+    "url": "https://drive.google.com/drive/folders/1GCWlC-iEWBpPuoDrekuTOsqbVs3KMwA7?usp=sharing"
   }
 }
