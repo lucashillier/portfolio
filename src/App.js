@@ -1,93 +1,44 @@
-import profilePic from './img/profile.jpg';
-import './App.css';
+import avatar from './img/profile.jpg';
+import crawler from './img/crawler.JPG';
+import mae from './img/mae.JPG';
+import mb3 from './img/mb3.png';
+import logo from './img/logo.svg';
 import { Layout, Sidebar, Content } from "./components/layout.js";
+import { Card } from "./components/card.js";
 import { Title, Subtitle, Body } from "./components/content.js";
 import { ButtonLink, Link } from "./components/link.js";
-import { Avatar } from "./components/image.js";
+import { Avatar, Image } from "./components/image.js";
+
+const bio = require('./data/bio.json');
+const projects = require("./data/projects.json");
 
 function App() {
   return (
       <Layout>
         <Sidebar>
           <Title>Lucas Hillier</Title>
-          <Avatar src={profilePic} alt="Lucas Hillier"/>
-          <Body>A brief description</Body>
+          <Avatar src={avatar} alt="Lucas Hillier"/>
+          <Body>{bio.professional}</Body>
+          <Body>{bio.personal}</Body>
         </Sidebar>
         <Content>
-          <Subtitle>Content Here</Subtitle>
-          <ButtonLink href="http://google.ca" target="_blank">
-            Test
-          </ButtonLink>
-          <Link href="http://google.ca">Test</Link>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
+          <Subtitle>My Projects</Subtitle>
+          <Card href={projects.project1.url}>
+            <Image src={mae} alt="See The Code" width="75%"/>
+            <Body>{projects.project1.description}</Body>
+          </Card>
+          <Card href={projects.project2.url}>
+            <Image src={crawler} alt="See The Code" width="75%"/>
+            <Body>{projects.project2.description}</Body>
+          </Card>
+          <Card href={projects.portfolio.url}>
+            <Image src={logo} alt="See The Code"/>
+            <Body>{projects.portfolio.description}</Body>
+          </Card>
+          <Card href={projects.mb3.url}>
+            <Image src={mb3} alt="See The Code" width="75%"/>
+            <Body>{projects.mb3.description}</Body>
+          </Card>
         </Content>
       </Layout>
   );

@@ -7,7 +7,7 @@ const Avatar = styled.img`
 `;
 
 const Image = styled.img`
-  width: ${props => props.width || 100};
+  width: ${props => props.width || "100%"};
 `;
 
 export { Avatar, Image };

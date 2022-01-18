@@ -21,7 +21,7 @@ const ButtonLink = styled.a`
 `;
 
 const Link = styled.a`
-  color: lightblue;
+  text-decoration: none;
 `;
 
 export { ButtonLink, Link };
