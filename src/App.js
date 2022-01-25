@@ -3,7 +3,9 @@ import crawler from './img/crawler.JPG';
 import mae from './img/mae.JPG';
 import mb3 from './img/mb3.png';
 import logo from './img/logo.svg';
-import { Layout, Sidebar, Content } from "./components/layout.js";
+import linkedin from './img/linkedin.png';
+import github from './img/GitHub-Mark-120px-plus.png';
+import { Layout, Sidebar, Content, Foot, Spacer } from "./components/layout.js";
 import { Card } from "./components/card.js";
 import { Title, Subtitle, Body } from "./components/content.js";
 import { ButtonLink, Link } from "./components/link.js";
@@ -20,6 +22,15 @@ function App() {
           <Avatar src={avatar} alt="Lucas Hillier"/>
           <Body>{bio.professional}</Body>
           <Body>{bio.personal}</Body>
+          <Spacer />
+          <Foot>
+            <Link href="https://www.linkedin.com/in/lucas-hillier-37703b17b/" target="_blank">
+              <Image src={linkedin} alt="My LinkedIn Profile" width="25px"/>
+            </Link>
+            <Link href="https://github.com/lucashillier" target="_blank">
+              <Image src={github} alt="My GitHub Profile" width="25px"/>
+            </Link>
+          </Foot>
         </Sidebar>
         <Content>
           <Subtitle>My Projects</Subtitle>

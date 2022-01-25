@@ -47,4 +47,15 @@ const Container = styled.div`
   }
 `;
 
-export { Layout, Sidebar, Content, Container };
+const Foot = styled.div`
+  display: flex;
+  justify-content: center;
+  column-gap: 5%;
+  width: 100%;
+`;
+
+const Spacer = styled.div`
+  flex: 1;
+`;
+
+export { Layout, Sidebar, Content, Container, Foot, Spacer };
